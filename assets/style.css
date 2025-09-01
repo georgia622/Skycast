@@ -1,0 +1,18 @@
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temperature-style {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    font-size: 3rem;
+}
+
+.container-styling {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
