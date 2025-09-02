@@ -1,53 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
+* {
     font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
-    background-image: url('../images/background.jpg');
-    background-position: center;
-    color: whitesmoke;
+    box-sizing: border-box;
 }
 
-.heading-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Roboto';
-    padding: 10px;
-}
-
-.menu-styling {
-    font-size: 2rem;
-}
-
-.temperature-style {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-    font-size: 4rem;
-}
-
-.container-styling {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10px;
-}
-
-.box-styling {
-    padding: 10px;
-    width: 30%;
-    height: 100px;
-    margin: 5px;
-    text-align: center;
-    border: solid 1px whitesmoke;
-    box-shadow: 2px 1px white;
-    border-radius: 5px;
-    background-color: rgb(0 0 0 / 0.2);
-}
-
-.box-width {
+.card {
     width: 90%;
-    margin-bottom: 20px;
-    margin: auto;
+    max-width: 470px;
+    background: hsla(9, 58%, 47%, 1);
+    background: linear-gradient(90deg, hsla(9, 58%, 47%, 1) 0%, hsla(215, 76%, 41%, 1) 100%);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
 }
