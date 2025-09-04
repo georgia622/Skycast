@@ -5,6 +5,7 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 const cityName = document.querySelector(".city");
 const temperature = document.querySelector(".temp");
+const humidity = document.querySelector(".humidity");
 
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -16,7 +17,7 @@ async function checkWeather(city) {
         let data = await response.json();
         cityName.innerHTML = data.name;
         temperature.innerHTML = Math.round(data.main.temp) + "°C";
-        document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+        humidity.innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
         if (data.weather[0].main == "Clouds") {
